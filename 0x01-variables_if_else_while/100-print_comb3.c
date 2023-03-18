@@ -6,7 +6,7 @@
 /**
  * main : print random combination
  */
-int main ()
+int main(void)
 {
 
 	int i,j;
