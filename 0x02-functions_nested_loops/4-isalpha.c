@@ -6,6 +6,7 @@
 
 /**
  * _isalpha - checking for alphabetic char
+ * @c: char to check
  * Return: 1 for letter 0 for others
  */
 
