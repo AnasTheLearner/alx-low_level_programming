@@ -5,7 +5,7 @@
 
 /**
 * main - prints a statment
-* return - returns 0
+* Return : 0
 *
 */
 int main(void)
