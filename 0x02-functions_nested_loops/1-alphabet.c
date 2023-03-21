@@ -7,15 +7,11 @@
  *  Return : 0
  */
 void print_alphabet(void)
-	{
-	char i;
-	for(i='a';i<='z';i++)
-		_putchar(i);
-	_putchar('\n');
-}
+{
+	char letter;
 
-int main(void)
-	{
-	print_alphabet();
-	return (0);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+
+	_putchar('\n');
 }
