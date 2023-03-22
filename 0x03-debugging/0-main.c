@@ -4,7 +4,7 @@
 
 #include "main.h"
 
-/* main - function test if it prints an integer positive or negative.
+/* main - function test if it prints an integer positive or negative
  * Return: 0
  */
 
