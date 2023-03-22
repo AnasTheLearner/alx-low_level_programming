@@ -5,7 +5,9 @@
  */
 
 /**
- * main - print teh first 98 fibonacci numbers starting with 1 and 2 separated by , and space.
+ * main - print teh first 98 fibonacci numbers, starting
+ *        with 1 and 2 separated by , and space.
+ *
  * Return: 0
  */
 
