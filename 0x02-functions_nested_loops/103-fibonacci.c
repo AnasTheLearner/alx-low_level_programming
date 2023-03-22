@@ -5,7 +5,7 @@
  */
 
 /**
- * main - print sum of even valued fibonacci sequence 
+ * main - print sum of even valued fibonacci sequence
  * Return: 0
  */
 
