@@ -6,7 +6,7 @@
  */
 
 /**
- * print_to_98 - print natural numbers from the input to 98 separted by ,.  
+ * print_to_98 - print natural numbers from the input to 98 separted by ,.
  * * @n: the input number
  */
 
