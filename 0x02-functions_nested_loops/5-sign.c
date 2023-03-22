@@ -4,7 +4,7 @@
  */
 
 /**
- * print_sing - print the sing of a number
+ * print_sign - print the sing of a number
  * @n: the number witch will be printing the sign of it
  * Return: 1 if >0 , 0 if =0 , -1 if <0 .
  */
