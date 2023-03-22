@@ -1,3 +1,7 @@
+/*
+ * task 0
+ */
+
 #include "main.h"
 
 /* main - function test if it prints an integer positive or negative.
@@ -11,5 +15,5 @@ int main(void)
 	i = 0;
 	positive_or_negative(i);
 
-return (0);
+	return (0);
 }
