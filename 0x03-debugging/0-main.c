@@ -1,11 +1,14 @@
 #include "main.h"
+#include <stdio.h>
 
 /*
  * task 0
  */
 
 /**
- * main - function test if it orints an integer positive or negative.
+ * main - function test if it orints an integer
+ *        positive or negative.
+ *
  * Return: 0
  */
 
