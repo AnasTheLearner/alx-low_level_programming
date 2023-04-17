@@ -1,11 +1,11 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
- * struct dog - dog type data
- * @name: name
- * @age: age
- * @owner: owner
+ * struct dog - dog data type
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of the dog
  */
 
 struct dog
@@ -16,7 +16,7 @@ struct dog
 };
 
 /**
- * dog_t - typedef for struct dog
+ * dog_t - Typedef for struct dog
  */
 
 typedef struct dog dog_t;
