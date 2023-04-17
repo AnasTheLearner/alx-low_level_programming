@@ -8,7 +8,6 @@
  * @owner: owner
  */
 
-
 struct dog
 {
 	char *name;
