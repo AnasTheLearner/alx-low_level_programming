@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /*
  * task 3
@@ -11,7 +12,6 @@
  * @s: operator passed as argument
  * Return: pointer
  */
-
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
