@@ -16,7 +16,7 @@
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int a, b;
-	char *c;
+	char *op;
 
 	if (argc != 4)
 	{
@@ -25,7 +25,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	}
 
 	a = atoi(argv[1]);
-	c = argv[2];
+	op = argv[2];
 	b = atoi(argv[3]);
 
 	if (get_op_func(op) == NULL || op[1] != '\0')
