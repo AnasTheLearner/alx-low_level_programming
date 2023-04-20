@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "3-calc.h"
 
 /*
  * task 4
@@ -34,7 +33,7 @@ int main(int argc, char *argv[])
 
 	for (x = 0; x < y; x++)
 	{
-		printf("%02x", opc[x] & 0xFF);
+		printf("%02x", ar[x] & 0xFF);
 		if (x != y - 1)
 			printf(" ");
 	}
