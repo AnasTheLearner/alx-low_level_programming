@@ -22,11 +22,10 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-
 	int a = 0;
 
-	while (ops[a].op != NULL && *(ops[a].op) != *s)
-		a++;
+	while (ops[x].op != NULL && *(ops[x].op) != *s)
+		x++;
 
-	return (ops[a].f);
+	return (ops[x].f);
 }
