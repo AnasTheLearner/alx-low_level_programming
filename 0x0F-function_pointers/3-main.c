@@ -1,6 +1,4 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /*
  * task 3
@@ -13,10 +11,10 @@
  * Return: 0
  */
 
-int main(int __attribute__((__unused__)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int a, b;
-	char *op;
+	int x, y;
+	int (*operation)(int, int);
 
 	if (argc != 4)
 	{
@@ -24,24 +22,23 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit(98);
 	}
 
-	a = atoi(argv[1]);
-	op = argv[2];
-	b = atoi(argv[3]);
-
-	if (get_op_func(op) == NULL || op[1] != '\0')
+	if (argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((*c == '/' && b == 0) ||
-	    (*c == '%' && b == 0))
+	operation = get_op_func(argv[2]);
+
+	if (operation == NULL)
 	{
 		printf("Error\n");
-		exit(100);
+		exit(99);
 	}
 
-	printf("%d\n", get_op_func(c)(a, b));
+	x = atoi(argv[1]);
+	y = atoi(argv[3]);
 
+	printf("%d\n", operation(x, y));
 	return (0);
 }
