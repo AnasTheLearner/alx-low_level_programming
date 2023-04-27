@@ -1,4 +1,9 @@
 #include "lists.h"
+
+/*
+ * task 0
+ */
+
 /**
  * print_list - prints all the elements of a linked list
  * @h: linked list
@@ -7,8 +12,8 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t nod;
-	nod = 0;
+	size_t nod = 0;
+
 	while (h != NULL)
 	{
 		if (h->str == NULL)
