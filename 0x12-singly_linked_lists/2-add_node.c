@@ -21,22 +21,19 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	a = malloc(sizeof(list_t));
 	if(a == NULL)
-
 	{
 		free(a);
 		return (NULL);
 	}
-
 	a->str = strdup(str);
 	if (a->str == NULL)
-
 	{
 		free(a);
 		return (NULL);
 	}
-
 	a->len = strlen(a->str);
 	a->next = *head;
 	*head = a;
+
 	return (a);
 }
