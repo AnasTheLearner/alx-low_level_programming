@@ -5,11 +5,11 @@
  */
 
 /**
- * print_list - prints all the elements of a list_t list
+ * print_list - prints all the elements
+ * of a list_t list
  * @h: list
  * Return: size
  */
-
 size_t print_list(const list_t *h)
 {
 	size_t ndes = 0;
@@ -20,8 +20,8 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)\n");
 		else
 			printf("[%d] %s\n", h->len, h->str);
-		h = h->next;
 		ndes++;
+		h = h->next;
 	}
 	return (ndes);
 }
