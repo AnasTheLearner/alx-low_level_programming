@@ -33,5 +33,5 @@ list_t *add_node(list_t **head, const char *str)
 	b->l = l;
 	b->next = *head;
 	*head = b;
-	return (new);
+	return (b);
 }
