@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /*
  * task 2
  */
@@ -9,29 +10,24 @@
  * @str: string
  * Return: address of the new element or null
  */
+
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *b;
-	char *a;
-	int l;
+	list_t *lls;
+	size_t chn;
 
-	b = malloc(sizeof(list_t));
-	if (b == NULL)
+	lls = malloc(sizeof(list_t));
+	if (lls == NULL)
 		return (NULL);
 
-	a = strdup(str);
-	if (a == NULL)
-	{
-		free(b);
-		return (NULL);
-	}
+	lls->str = strdup(str);
 
-	for (l = 0; str[l];)
-		l++;
+	for (chn = 0; str[chn]; chn++)
+		;
 
-	b->str = a;
-	b->l = l;
-	b->next = *head;
-	*head = b;
-	return (b);
+	lls->len = chn;
+	lls->next = *head;
+	*head = lls;
+
+	return (*head);
 }
