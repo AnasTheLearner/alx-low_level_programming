@@ -1,4 +1,4 @@
-#include "lists"
+#include "lists.h"
 
 /*
  * task 8
@@ -14,12 +14,15 @@
 int sum_listint(listint_t *head)
 {
 	int sum = 0;
-	listint_t *cnt = head;
 
-	while (cnt)
+	if (head == NULL)
+		return (sum);
+
+	while (head)
 	{
-		sum += cnt->n;
-		cnt = cnt->next;
+		head = head->next;
+		sum = sum + head->n;
 	}
+
 	return (sum);
 }
