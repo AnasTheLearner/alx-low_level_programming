@@ -9,15 +9,16 @@
  * @h: list to print
  * Return: nodes number
  */
+
 size_t print_listint(const listint_t *h)
 {
-	size_t ab = 0;
+	size_t cnt = 0;
 
 	while (h)
 	{
 		printf("%d\n", h->n);
-		ab++;
+		cnt++;
 		h = h->next;
 	}
-	return (ab);
+	return (cnt);
 }
