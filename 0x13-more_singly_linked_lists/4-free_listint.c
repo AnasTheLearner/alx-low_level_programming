@@ -13,6 +13,7 @@
 void free_listint(listint_t *head)
 {
 	listint_t *cnt;
+
 	while (head)
 	{
 		cnt = head->next;
