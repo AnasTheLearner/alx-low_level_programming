@@ -11,8 +11,9 @@
 
 int get_endianness(void)
 {
-	int k = 1;
+	int k;
 
+	k = 1;
 	if (*(char *)&k == 1)
 		return (1);
 	else
