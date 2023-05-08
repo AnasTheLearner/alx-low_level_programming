@@ -30,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	cd = read(ab, bof, letters);
 	ef = write(STDOUT_FILENO, bof, cd);
 
-	if (ab == -1 || cd == -1 || ef == -1 || ef != r)
+	if (ab == -1 || cd == -1 || ef == -1 || ef != cd)
 	{
 		free(bof);
 		return (0);
