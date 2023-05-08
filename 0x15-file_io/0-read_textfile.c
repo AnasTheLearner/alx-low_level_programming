@@ -16,25 +16,26 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int st;
-	ssize_t hya, hyb;
+	ssize_t ab, cd, ef;
 	char *bof;
 
-	if (!filename)
+	if (filename == NULL)
 		return (0);
 
-	st = open(filename, O_RDONLY);
-
-	if (st == -1)
+	bof = malloc(sizeof(char) * letters);
+	if (bof == NULL)
 		return (0);
 
-	bof = malloc(sizeof(char) * (letters));
-	if (!bof)
-		return (0);
+	ab = open(filename, O_RDONLY);
+	cd = read(ab, bof, letters);
+	ef = write(STDOUT_FILENO, bof, cd);
 
-	hyb = read(st, bof, letters);
-	hya = write(STDOUT_FILENO, bof, hyb);
-	close(st);
+	if (ab == -1 || cd == -1 || ef == -1 || ef != r)
+	{
+		free(bof);
+		return (0);
+	}
 	free(bof);
-	return (hya);
+	close(ab);
+	return (ef);
 }
