@@ -97,7 +97,7 @@ int main(int argc, char *argv[])
 	} while (rd > 0);
 
 	free(buf);
-	close_file(de);
-	close_file(aa);
+	close_doc(de);
+	close_doc(aa);
 	return (0);
 }
